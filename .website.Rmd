@@ -1,0 +1,23 @@
+---
+title: "Untitled"
+output: html_document
+date: "2024-08-19"
+---
+
+Open the R Studio project that is linked to the GitHub repository [YOURGITHUBNAME].github.io (where [YOURGITHUBNAME] represents your GitHub username).
+
+Build the website by running rmarkdown::render_site(encoding = "UTF-8") or by using the keyboard shortcut Ctrl+Shift+B / Shift+Command+B.
+
+```{r}
+rmarkdown::render_site(encoding = "UTF-8")
+```
+
+
+Commit and push all new or updated files to your GitHub repository. The first time you build the website, a full directory (site_libs/) is created. Trying to add all the files from this directory to a commit can make RStudio freeze. If this happens, restart R Studio and run rm .git/index.lock in the terminal of R Studio (the terminal is part of the Console pane). Afterwards, run git add . in the terminal; This will add all new files for you to commit (you can see all the added files in the Git panel of the Environments pane after refreshing it).
+
+
+Change the content of your website by modifying _site.yml, index.Rmd, about.Rmd, cv.Rmd and CV.pdf.
+
+Build your website again (see Step 2) and commit & push everything to the GitHub repository.
+
+At any point, you can preview your website locally by rendering your site and opening the generated HTML files in your Web Browser. You can also see your website at https://YOURGITHUBNAME.github.io/.
